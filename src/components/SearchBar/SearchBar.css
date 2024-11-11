@@ -1,0 +1,46 @@
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #3b3f51, #2b2f3a);
+    border-radius: 50px;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* Input Field Styling */
+.search-bar input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Input Placeholder Styling */
+.search-bar input::placeholder {
+    color: #b0bec5;
+}
+
+/* Explore Button Styling */
+.search-bar .explore-btn {
+    padding: 15px 30px;
+    background: #ffa500;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    color: #1d1347;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.search-bar .explore-btn:hover {
+    background: #1d1347;
+    color: #fff;
+}

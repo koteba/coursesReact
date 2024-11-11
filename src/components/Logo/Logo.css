@@ -1,0 +1,55 @@
+/* Logo Carousel Styling */
+.logo-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    /* background-color: #0f1923; */
+    padding: 25px;
+    position: relative;
+    margin-top: 100PX;
+}
+
+.logo-container {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar */
+.logo-container::-webkit-scrollbar {
+    display: none;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    /* filter: brightness(0) invert(1); */
+    /* transition: transform 0.3s; */
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Arrow Styling */
+.carousel-arrow {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.carousel-arrow:hover {
+    color: #ffa500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        width: 80px;
+    }
+}

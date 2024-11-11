@@ -1,0 +1,175 @@
+/* Navbar Styling */
+header {
+    background: transparent;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header {
+    background: transparent;
+    transition: background 0.3s;
+    /* هذا يضيف انتقالًا سلسًا عند تغيير اللون */
+}
+
+header.scrolled {
+    background: rgba(15, 25, 35, 0.9);
+    /* اللون المناسب عند التمرير */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar ul li a:hover {
+    color: #00c853;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #00c853;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.signup-btn {
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.signup-btn:hover {
+    background: #00c853;
+}
+
+
+
+
+
+/* Illustrations Styling */
+.hero-illustrations {
+    display: flex;
+    gap: 20px;
+}
+
+.illustration {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Close Button Visibility on Active Menu */
+.nav-links.active .close-btn {
+    display: block;
+    /* Show the close button when the menu is active */
+}
+
+/* Ensure the close button is positioned correctly */
+.close-btn {
+    display: none;
+    /* Hide by default */
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    text-align: right;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Media Queries for Mobile */
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo {
+        order: 1;
+        /* Ensures the logo stays on the left */
+        margin-right: auto;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .signup-btn {
+        display: block;
+        order: 1;
+        /* Keeps the button visible with the header */
+        margin-top: 0;
+        /* Adjust this value to raise the button */
+        margin-bottom: 15px;
+        /* Add some space below if needed */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background: #0f1923;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+}

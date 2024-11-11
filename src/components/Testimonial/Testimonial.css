@@ -1,0 +1,114 @@
+/* Testimonial Section Styling */
+.testimonial-section {
+    /* background-color: #0f1923; */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 2000px;
+    margin: -107px auto;
+}
+
+.testimonial-content {
+    background-image: url('../assets/img/9406224_26669 6.png');
+    background-size: cover;
+    /* Ensures the background covers the entire element */
+    background-position: center;
+    /* Centers the background image */
+    background-repeat: no-repeat;
+    /* Prevents the background from repeating */
+    padding: 60px 20px;
+    /* Adds padding for content spacing */
+    border-radius: 20px;
+    /* Rounded corners to match the design */
+    max-width: 1500px;
+    margin: 0 auto;
+    /* Centers the content */
+}
+
+/* Title Styling */
+.testimonial-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.quote-icon {
+    font-size: 64px;
+    color: #ffa500;
+    margin-bottom: 20px;
+}
+
+/* Testimonial Text Styling */
+.testimonial-text {
+    font-size: 16px;
+    color: #b0bec5;
+    margin-bottom: 20px;
+}
+
+/* Client Name Styling */
+.client-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Navigation Styling */
+.testimonial-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-arrow {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-arrow:hover {
+    color: #ffa500;
+}
+
+/* Client Avatars Styling */
+.client-avatars {
+    display: flex;
+    gap: 10px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.avatar:hover {
+    transform: scale(3.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial-section {
+        padding: 40px 20px;
+    }
+
+    .testimonial-content {
+        width: 100%;
+    }
+
+    .testimonial-navigation {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+    }
+}

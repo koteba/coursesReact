@@ -1,0 +1,92 @@
+/* Carousel Container Styling */
+.courses-container {
+    background-image: url('../../../public/assets/img/9406224_26669\ 6.png');
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+/* Arrow Styling */
+.carousel-arrow {
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    padding: 0 15px;
+    user-select: none;
+    z-index: 10;
+}
+
+/* Carousel Styling */
+.courses {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0 10px;
+}
+
+/* Hide scrollbar */
+.courses::-webkit-scrollbar {
+    display: none;
+}
+
+/* Carousel Item Styling */
+.course-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    width: 290px;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+    cursor: pointer;
+    position: relative;
+    /* إضافة هذه الخاصية */
+}
+
+.course-item:hover {
+    transform: scale(1.05);
+}
+
+/* Icon Styling */
+.icon {
+    background-color: #ffa500;
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* Overlay Icon Styling */
+.overlay-icon {
+    color: 142941;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #364C65;
+    font-size: 20px;
+}
+
+/* Text Styling */
+.course-item p {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .courses-container {
+        padding: 10px 0;
+    }
+
+    .course-item {
+        width: 120px;
+        word-wrap: break-word;
+        /* لإجبار الكلمة على الالتفاف */
+        overflow-wrap: break-word;
+    }
+}
